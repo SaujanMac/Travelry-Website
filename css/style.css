@@ -181,8 +181,8 @@ body #landing .showcase .searchtour form .form-group button.btn {
 }
 
 body #hidden_header {
-  background-color: rgba(0, 0, 0, 0);
-  color: var(--lightgrey);
+  background-color: var(--primeyellow);
+  color: var(--darkgrey);
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   z-index: 999;
@@ -197,7 +197,7 @@ body #hidden_header {
 }
 
 body #hidden_header .header_nav {
-  padding: 0.5rem;
+  padding: 0.2rem;
   font-size: 0.8rem;
 }
 
@@ -222,16 +222,16 @@ body #hidden_header .header_nav .content nav {
 }
 
 body #hidden_header .header_nav .content nav a {
-  color: var(--lightgrey);
+  color: var(--darkgrey);
   padding: 0 1rem;
 }
 
 body #hidden_header .header_nav .content nav a:hover {
-  color: var(--midgrey);
+  color: #000000;
 }
 
 body #hidden_header .header_nav .content .signup i.fa.fa-user {
-  border-right: 1px solid var(--lightgrey);
+  border-right: 1px solid var(--darkgrey);
   padding: 0 0.5rem;
 }
 

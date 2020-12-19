@@ -65,24 +65,6 @@
       </div>
     </div>
 
-    <!-- HIDDEN HEADER -->
-    <div id="hidden_header">
-      <div class="header_nav">
-        <div class="content d-flex align-items-center justify-content-between">
-        <div class="logo"><img src="images/logo.png" alt="Traversy"></div>
-        <nav>
-          <a href="#">Packages</a>
-          <a href="#">Locations</a>
-          <a href="#">Hotels</a>
-          <a href="#">More...</a>
-        </nav>
-        <div class="signup">
-          <span>SIGN UP / LOGIN</span>
-          <span><i class="fa fa-user"></i><i class="fa fa-search mr-3"></i></span>
-        </div>
-      </div>
-    </div>
-  </div>
 
     <!-- About -->
     <div id="about">
@@ -100,6 +82,26 @@
   </div>
 </div>
     </div>
+
+<!-- HIDDEN HEADER -->
+<div id="hidden_header">
+  <div class="header_nav">
+    <div class="content d-flex align-items-center justify-content-between">
+    <div class="logo"><img src="images/logo.png" alt="Traversy"></div>
+    <nav>
+      <a href="#">Packages</a>
+      <a href="#">Locations</a>
+      <a href="#">Hotels</a>
+      <a href="#">More...</a>
+    </nav>
+    <div class="signup">
+      <span>SIGN UP / LOGIN</span>
+      <span><i class="fa fa-user"></i><i class="fa fa-search mr-3"></i></span>
+    </div>
+  </div>
+</div>
+</div>
+
 
     <!-- Popular Destinations -->
     <div id="popdest">
@@ -276,43 +278,43 @@
       // })
       </script>
     <script>
-    //   $(document).ready(function() {
+      $(document).ready(function() {
 
-    //     // Header_top hideonscrolltop
-    //     $(window).scroll(function(){
-    //       console.log(scrollY);
-    //   if($(this).scrollTop()>690) {
-    //       $('#hidden_header').css({
-    //         'height': '70px',
-    //         // 'transform':'scaleY(1)',
-    //         'background-color': 'rgba(0,0,0,1)',
-    //         'opacity': '1',
-    //       })
-    //       // // $('.showcase h1').css({
-    //       // //   'opacity': '0',
-    //       // // })
-    //       // // $('.showcase h6').css({
-    //       // //   'opacity': '0',
-    //       // // })
+        // Header_top hideonscrolltop
+        $(window).scroll(function(){
+          console.log(scrollY);
+      if($(this).scrollTop()>1447) {
+          $('#hidden_header').css({
+            'height': '60px',
+            // 'transform':'scaleY(1)',
+            'background-color': 'var(--primeyellow)',
+            'opacity': '1',
+          })
+          // // $('.showcase h1').css({
+          // //   'opacity': '0',
+          // // })
+          // // $('.showcase h6').css({
+          // //   'opacity': '0',
+          // // })
   
-    //   }
-    //   else {
-    //       $('#hidden_header').css({
-    //         'height': '0px',
-    //         // 'transform':'scaleY(0)',
-    //         'background-color': 'rgba(0,0,0,0)',
-    //         'opacity': '0',
-    //       })
-    //       // $('.showcase h1').css({
-    //       //   'opacity': '1',
-    //       // })
-    //       // $('.showcase h6').css({
-    //       //   'opacity': '1',
-    //       // })
-    //   }
+      }
+      else {
+          $('#hidden_header').css({
+            // 'height': '0px',
+            // 'transform':'scaleY(0)',
+            'background-color': 'rgba(0,0,0,0)',
+            'opacity': '0',
+          })
+          // $('.showcase h1').css({
+          //   'opacity': '1',
+          // })
+          // $('.showcase h6').css({
+          //   'opacity': '1',
+          // })
+      }
 
-    //   })
-    // })
+      })
+    })
     </script>
   </body>
 </html>
