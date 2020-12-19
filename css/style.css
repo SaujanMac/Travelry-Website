@@ -191,13 +191,13 @@ body #hidden_header {
   position: -webkit-sticky;
   position: sticky;
   height: 0;
+  padding: 0.3rem;
   top: 0;
   opacity: 0;
   overflow: hidden;
 }
 
 body #hidden_header .header_nav {
-  padding: 0.2rem;
   font-size: 0.8rem;
 }
 
@@ -464,6 +464,7 @@ body #featured .card .card-body {
 }
 
 body #featured .card .card-body .card-title {
+  font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,6 +474,7 @@ body #featured .card .card-body .card-title {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  line-height: normal;
 }
 
 body #featured .card .card-body .card-title .title {
@@ -480,7 +482,7 @@ body #featured .card .card-body .card-title .title {
 }
 
 body #featured .card .card-body .text-muted {
-  color: var(--lightgrey);
+  color: var(--lightgrey) !important;
   line-height: 2;
   font-size: 0.8rem;
 }
@@ -504,6 +506,7 @@ body #featured .card .card-body .btn {
   border-radius: 0;
   color: #ffffff;
   font-size: 0.8rem;
+  margin: 1.5rem 0 0 0;
 }
 
 body #featured .card .card-body .btn:hover {

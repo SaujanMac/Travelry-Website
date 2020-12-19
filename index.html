@@ -87,7 +87,7 @@
 <div id="hidden_header">
   <div class="header_nav">
     <div class="content d-flex align-items-center justify-content-between">
-    <div class="logo"><img src="images/logo.png" alt="Traversy"></div>
+    <div class="logo"><img src="images/logo_black.png" alt="Traversy"></div>
     <nav>
       <a href="#">Packages</a>
       <a href="#">Locations</a>
@@ -208,6 +208,7 @@
       <h3>Featured Tours</h3>
       <h6 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, ratione.</h6>
       <div class="card-deck">
+        <!-- CARD -->
         <div class="card">
           <img class="card-img-top" src="images/pokhara.jpg" alt="Card image cap">
           <p class="label"><small class="text-muted"><i class="fas fa-map-marker-alt pr-2"></i>Phewa Lake, Pokhara</small>
@@ -216,24 +217,34 @@
           <div class="card-body">
             <h5 class="card-title m-0"><div class="title">Pokhara Expedition</div><div class="price">$999</div></h5>
             <div class="text-muted"><i class="fa fa-calendar"></i> 10 Days   |   <i class="fa fa-user"></i> 5 Guests</div>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga ipsam expedita at excepturi, repudiandae obcaecati consequatur ea animi reiciendis rerum adipisci dolorem non blanditiis, doloremque aliquid debitis nemo?.</p>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga ipsam expedita at excepturi.</p>
             <button class="btn">View Details</button>
           </div>
         </div>
+        <!-- CARD -->
         <div class="card">
           <img class="card-img-top" src="images/manaslu.jpg" alt="Card image cap">
+          <p class="label"><small class="text-muted"><i class="fas fa-map-marker-alt pr-2"></i>Manaslu, Gorkha</small>
+          <small class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>4/5</small>
+          </p>
           <div class="card-body">
-            <h5 class="card-title"><div class="title">Pokhara Expedition</div><div class="price">$999</div></h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title m-0"><div class="title">Manaslu Trekking</div><div class="price">$999</div></h5>
+            <div class="text-muted"><i class="fa fa-calendar"></i> 10 Days   |   <i class="fa fa-user"></i> 5 Guests</div>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga ipsam expedita at excepturi.</p>
+            <button class="btn">View Details</button>
           </div>
         </div>
+        <!-- CARD -->
         <div class="card">
           <img class="card-img-top" src="images/sheyphoksundo.jpg" alt="Card image cap">
+          <p class="label"><small class="text-muted"><i class="fas fa-map-marker-alt pr-2"></i>Shey Phoksundo, Dolpa</small>
+          <small class="text-muted"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>4/5</small>
+          </p>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <h5 class="card-title m-0"><div class="title">Shey-Phoksundo Trek</div><div class="price">$999</div></h5>
+            <div class="text-muted"><i class="fa fa-calendar"></i> 10 Days   |   <i class="fa fa-user"></i> 5 Guests</div>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga ipsam expedita at excepturi.</p>
+            <button class="btn">View Details</button>
           </div>
         </div>
       </div>
@@ -300,7 +311,7 @@
       }
       else {
           $('#hidden_header').css({
-            // 'height': '0px',
+            'height': '0',
             // 'transform':'scaleY(0)',
             'background-color': 'rgba(0,0,0,0)',
             'opacity': '0',
