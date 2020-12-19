@@ -37,7 +37,7 @@ body .text-muted {
 }
 
 body #landing {
-  background: url("/images/landing1920.jpg") no-repeat top/cover;
+  background: url("../images/landing1920.jpg") no-repeat top/cover;
   min-height: 100vh;
   min-width: 100vw;
   text-decoration: none;
