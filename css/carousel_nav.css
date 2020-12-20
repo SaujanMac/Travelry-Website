@@ -1,0 +1,32 @@
+.owl-nav {
+    margin: 0!important;
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    left: 89.5%;
+    width: 150px!important;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    font: inherit;
+    padding: 0.5rem 0.5rem 1rem 0.5rem!important;
+    line-height: 0.5!important;
+    margin: 0 0.1rem;
+    border-radius: 0;
+    border: 1px solid var(--lightgrey)!important;
+    outline: 0;
+}
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 3rem!important;
+    display: block!important;
+    line-height: 10px;
+    color: var(--lightgrey);
+}
+
+
+
+.owl-carousel .owl-nav button:hover {
+    background-color: var(--darkgrey)!important;
+}

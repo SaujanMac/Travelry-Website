@@ -347,6 +347,7 @@ h3 {
     }
 
     #featured {
+        position: relative;
         padding: 4rem 0;
         h3 {
             line-height: 2;
@@ -357,6 +358,8 @@ h3 {
         .card {
             margin: 0 0.5rem;
             border-radius: 0;
+            border-top: 2px solid rgba(0,0,0,0);
+            transition: all 0.2s ease-in-out;
             .card-img-top{
                 border-radius: 0;
             }
@@ -374,7 +377,7 @@ h3 {
                     font-weight: 400!important;
                     font-size: 0.7rem;
                     .fas,.far,.fa {
-                        font-size: 0.5rem;
+                        font-size: 0.7rem;
                         padding: 0 0.1rem 0 0;
                     }
                 }
@@ -423,6 +426,11 @@ h3 {
                     color: #000000;
                 }
             }
+        }
+        .card:hover {
+            border-top: 2px solid var(--primered);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
         }
 
     }
