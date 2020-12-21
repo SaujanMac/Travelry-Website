@@ -1,4 +1,4 @@
-.owl-nav {
+#featured .owl-nav {
     margin: 0!important;
     display: inline-block;
     position: absolute;
@@ -7,7 +7,7 @@
     width: 150px!important;
 }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+#featured .owl-carousel .owl-nav button.owl-next, #featured .owl-carousel .owl-nav button.owl-prev, #featured .owl-carousel button.owl-dot {
     background: 0 0;
     color: inherit;
     font: inherit;
@@ -18,7 +18,7 @@
     border: 1px solid var(--lightgrey)!important;
     outline: 0;
 }
-.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+#featured .owl-carousel .owl-nav button.owl-next span, #featured .owl-carousel .owl-nav button.owl-prev span {
     font-size: 3rem!important;
     display: block!important;
     line-height: 10px;
@@ -27,6 +27,6 @@
 
 
 
-.owl-carousel .owl-nav button:hover {
+#featured .owl-carousel .owl-nav button:hover {
     background-color: var(--darkgrey)!important;
 }

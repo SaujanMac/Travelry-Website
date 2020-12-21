@@ -294,7 +294,101 @@
     </div>
   </div>
 
-  <!-- HOTELS & RESTAURANTS -->
+  <!-- PARALLAX BACKGROUND -->
+<div class="parallax">
+
+</div>
+
+<!-- Hotels & Restaurants -->
+<div id="hotels">
+  <div class="container">
+    <div class="content">
+      <h3>HOTELS IN NEPAL</h3>
+      <h1>HEADING</h1>
+      <div class="subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit nisi</div>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta ipsam sunt iusto atque nesciunt libero tempora fuga soluta, nam nihil impedit eius quaerat possimus a perspiciatis reiciendis modi totam dolores aperiam rerum recusandae corporis. Sunt qui corrupti aspernatur itaque necessitatibus?</p>
+      <p class="p-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis, voluptatum esse asperiores inventore odit officia pariatur aliquam aut autem rem voluptas voluptates sit necessitatibus placeat vero iste perferendis. Aspernatur?</p>
+
+      <p><a href="#">See More...</a></p>
+    </div>
+    <div class="images">
+      <div class="main_img">
+        <img src="images/hotel_big.jpg" alt="">
+      </div>
+      <div class="img_thmb">
+        <img src="images/hotel_thumb1.jpg" alt="" class="pt-0">
+        <img src="images/hotel_thumb2.jpg" alt="">
+        <img src="images/hotel_thumb3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+<div id="restaurants">
+  <div class="container">
+    <h3>Restaurants in Kathmandu</h3>
+    <p class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex facere recusandae eos expedita quod voluptatum.</p>
+    <div class="card-deck owl-carousel owl-theme">
+      <!-- CARD -->
+      <div class="card item">
+        <img class="card-img-top" src="images/rest_4.jpg" alt="image">
+        <div class="card-body">
+          <div class="card-title">Lorem Restro</div>
+          <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, doloribus sapiente sequi neque veritatis?</div>
+          <small class="text-muted d-flex justify-content-between">
+            <div>Lorem, ipsum.</div>
+            <div class="reviewnum">999 Reviews</div>
+          </small>
+        </div>
+      </div>
+      <!-- CARD END -->
+      <!-- CARD -->
+      <div class="card item">
+        <img class="card-img-top" src="images/rest_3.jpg" alt="image">
+        <div class="card-body">
+          <div class="card-title">Cafe Outside</div>
+          <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <small class="text-muted d-flex justify-content-between">
+            <div>Lorem, ipsum.</div>
+            <div class="reviewnum">999 Reviews</div>
+          </small>
+        </div>
+      </div>
+      <!-- CARD END -->
+      <!-- CARD -->
+      <div class="card item">
+        <img class="card-img-top" src="images/rest_2.jpg" alt="image">
+        <div class="card-body">
+          <div class="card-title">Inside Bistro</div>
+          <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, doloribus sapiente sequi neque veritatis?</div>
+          <small class="text-muted d-flex justify-content-between">
+            <div>Lorem, ipsum.</div>
+            <div class="reviewnum">999 Reviews</div>
+          </small>
+        </div>
+      </div>
+      <!-- CARD END -->
+      <!-- CARD -->
+      <div class="card item">
+        <img class="card-img-top" src="images/rest_1.jpg" alt="image">
+        <div class="card-body">
+          <div class="card-title">Tables & Lights</div>
+          <div class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+          <small class="text-muted d-flex justify-content-between">
+            <div>Lorem, ipsum.</div>
+            <div class="reviewnum">999 Reviews</div>
+          </small>
+        </div>
+      </div>
+      <!-- CARD END -->
+    </div>
+  </div>
+</div>
+<!-- PARALLAX BACKGROUND -->
+<div class="parallax2">
+
+</div>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -324,22 +418,22 @@
 })  
         </script>
         <script>
-      //     //PARALLAX CODE
-      //     function isInViewport(node) {
-      //   var rect = node.getBoundingClientRect()
-      //   return (
-      //     (rect.height > 0 || rect.width > 0) &&
-      //     rect.bottom >= 0 &&
-      //     rect.right >= 0 &&
-      //     rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
-      //     rect.left <= (window.innerWidth || document.documentElement.clientWidth)
-      //   )
-      // }
+          //PARALLAX CODE
+          function isInViewport(node) {
+        var rect = node.getBoundingClientRect()
+        return (
+          (rect.height > 0 || rect.width > 0) &&
+          rect.bottom >= 0 &&
+          rect.right >= 0 &&
+          rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.left <= (window.innerWidth || document.documentElement.clientWidth)
+        )
+      }
       
-      // $(window).scroll(function() {
-      //   var scrolled = $(window).scrollTop()
-      // //   landing
-      // $('#landing').each(function(index, element) {
+      $(window).scroll(function() {
+        var scrolled = $(window).scrollTop()
+      // //   travelform
+      // $('#travelform').each(function(index, element) {
       //     var initY = $(this).offset().top
       //     var height = $(this).height()
       //     var endY  = initY + $(this).height()
@@ -352,7 +446,35 @@
       //       $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
       //     }
       //   })
-      // })
+      //   parallax
+      $('.parallax').each(function(index, element) {
+          var initY = $(this).offset().top
+          var height = $(this).height()
+          var endY  = initY + $(this).height()
+      
+          // Check if the element is in the viewport.
+          var visible = isInViewport(this)
+          if(visible) {
+            var diff = scrolled - initY
+            var ratio = Math.round((diff / height) * 100)
+            $(this).css('background-position','center ' + parseInt(-(ratio * 1.5)) + 'px')
+          }
+        })
+        //   parallax2
+      $('.parallax2').each(function(index, element) {
+          var initY = $(this).offset().top
+          var height = $(this).height()
+          var endY  = initY + $(this).height()
+      
+          // Check if the element is in the viewport.
+          var visible = isInViewport(this)
+          if(visible) {
+            var diff = scrolled - initY
+            var ratio = Math.round((diff / height) * 100)
+            $(this).css('background-position','bottom ' + parseInt(-(ratio * 1.5)) + 'px')
+          }
+        })
+      })
       </script>
     <script>
       $(document).ready(function() {

@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: #f1efef;
   font-family: 'Montserrat','Open Sans', sans-serif;
   line-height: 1.8;
   color: #222222;
@@ -359,7 +359,7 @@ body #popdest .row2 {
 }
 
 body #travelform {
-  background: #dddddd;
+  background: url("../images/travelchoose.png") #ffffff no-repeat center/cover;
   padding: 3rem 0;
 }
 
@@ -525,5 +525,118 @@ body #featured .card:hover {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+}
+
+body .parallax {
+  background: url("../images/parallax.jpg") no-repeat top/cover;
+  background-attachment: fixed;
+  width: 100vw;
+  min-height: 70vh;
+}
+
+body #hotels {
+  padding: 4rem 0;
+}
+
+body #hotels .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #hotels .container .content h1 {
+  color: var(--midgrey);
+  line-height: 2;
+  font-weight: 300;
+}
+
+body #hotels .container .content .subtext {
+  font-family: 'Open Sans';
+  color: var(--lightgrey);
+}
+
+body #hotels .container .content p {
+  padding: 1rem 0;
+  font-family: 'Open Sans';
+  color: var(--midgrey);
+  font-size: 1.05rem;
+}
+
+body #hotels .container .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #hotels .container .images .main_img {
+  padding: 0 1.5rem;
+}
+
+body #hotels .container .images .img_thmb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #hotels .container .images .img_thmb img {
+  padding: 0.8rem 0;
+}
+
+body #restaurants {
+  background: #ffffff;
+  padding: 3rem 0;
+}
+
+body #restaurants .text-muted {
+  color: #8b8b8b !important;
+  font-weight: 300;
+  line-height: 2.5;
+}
+
+body #restaurants .card-deck {
+  border-radius: 0 !important;
+}
+
+body #restaurants .card-deck .card {
+  border-radius: 0 !important;
+}
+
+body #restaurants .card-deck .card .card-body .card-img-top {
+  border-radius: 0 !important;
+}
+
+body #restaurants .card-deck .card .card-body .card-title {
+  color: var(--primered);
+  font-size: 1.5rem;
+}
+
+body #restaurants .card-deck .card .card-body .text-muted {
+  font-family: 'Open Sans';
+  font-size: 0.8rem;
+  line-height: 1.8;
+  padding: 0 0 1rem 0;
+  border-bottom: 1px solid #dddddd;
+  height: 100px;
+}
+
+body #restaurants .card-deck .card .card-body small.text-muted {
+  padding: 2rem 0 0 0;
+  line-height: 0;
+  height: 0;
+  border-bottom: 0px;
+}
+
+body .parallax2 {
+  background: url("../images/parallax2.jpg") no-repeat bottom/cover;
+  background-attachment: fixed;
+  width: 100vw;
+  min-height: 70vh;
 }
 /*# sourceMappingURL=style.css.map */

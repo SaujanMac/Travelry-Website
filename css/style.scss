@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 @import 'color';
 body {
-    background-color: #f5f5f5;
+    background-color: #f1efef;
     font-family: 'Montserrat','Open Sans', sans-serif;
     line-height: 1.8;
     color: #222222;
@@ -300,7 +300,8 @@ h3 {
     
     // travelform
     #travelform {
-        background: #dddddd;
+        background: url('../images/travelchoose.png') #ffffff no-repeat center/cover;
+        // background-attachment: fixed;
         padding: 3rem 0;
         .container {
             h3 {
@@ -434,5 +435,100 @@ h3 {
         }
 
     }
+
+    // Parallax BG
+    .parallax {
+        background: url('../images/parallax.jpg') no-repeat top/cover;
+        background-attachment: fixed;
+        width: 100vw;
+        min-height:70vh;
+    }
+
+    // Hotel
+    #hotels {
+        padding: 4rem 0;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            .content {
+                h1 {
+                    color: var(--midgrey);
+                    line-height: 2;
+                    font-weight: 300;
+                }
+                .subtext {
+                    font-family: 'Open Sans';
+                    color: var(--lightgrey);
+                }
+                p {
+                    padding: 1rem 0;
+                    font-family: 'Open Sans';
+                    color: var(--midgrey);
+                    font-size: 1.05rem;
+                }
+            }
+            .images {
+                display: flex;
+                .main_img {
+                    padding: 0 1.5rem;
+                }
+                .img_thmb {
+                    display: flex;
+                    flex-direction: column;
+                    img {
+                        padding: 0.8rem 0; 
+                    }
+                }
+            }
+            
+        }
+    }
+
+    #restaurants {
+        background: #ffffff;
+        padding: 3rem 0;
+        .text-muted {
+            color: #8b8b8b!important;
+            font-weight: 300;
+            line-height: 2.5;
+        }
+        .card-deck {
+            border-radius: 0!important;
+            .card {
+                border-radius: 0!important;
+                .card-body{
+                    .card-img-top{
+                        border-radius: 0!important;
+                    }
+                    .card-title{
+                        color: var(--primered);
+                        font-size: 1.5rem;
+                    }
+                    .text-muted {
+                        font-family: 'Open Sans';
+                        font-size: 0.8rem;
+                        line-height: 1.8;
+                        padding: 0 0 1rem 0;
+                        border-bottom: 1px solid #dddddd;
+                        height: 100px;
+                    }
+                    small.text-muted {
+                        padding: 2rem 0 0 0;
+                        line-height: 0;
+                        height: 0;
+                        border-bottom: 0px;
+
+                    }
+                }
+            }
+        }
+    }
+// Parallax BG
+.parallax2 {
+    background: url('../images/parallax2.jpg') no-repeat bottom/cover;
+    background-attachment: fixed;
+    width: 100vw;
+    min-height:70vh;
+}
 
 }
