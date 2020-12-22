@@ -528,10 +528,10 @@ body #featured .card:hover {
 }
 
 body .parallax {
-  background: url("../images/parallax.jpg") no-repeat top/cover;
+  background: url("../images/parallax.jpg") no-repeat center/cover;
   background-attachment: fixed;
   width: 100vw;
-  min-height: 70vh;
+  min-height: 60vh;
 }
 
 body #hotels {
@@ -634,9 +634,165 @@ body #restaurants .card-deck .card .card-body small.text-muted {
 }
 
 body .parallax2 {
-  background: url("../images/parallax2.jpg") no-repeat bottom/cover;
+  background: url("../images/parallax2.jpg") no-repeat center/cover;
   background-attachment: fixed;
   width: 100vw;
-  min-height: 70vh;
+  min-height: 60vh;
+}
+
+body #blog {
+  padding: 4rem 0;
+}
+
+body #blog .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #blog .container .content .card {
+  border-radius: 0 !important;
+  margin: 0 1.2rem 0 0;
+  max-width: 800px;
+}
+
+body #blog .container .content .card .card-img-top {
+  border-radius: 0;
+}
+
+body #blog .container .content .card .card-body .card-title {
+  font-size: 1.5rem;
+  color: var(--primered);
+  margin: 0;
+}
+
+body #blog .container .content .card .card-body small.text-muted {
+  line-height: 3;
+}
+
+body #blog .container .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #blog .container .list .card {
+  width: 400px;
+  height: 150px;
+  overflow: hidden;
+}
+
+body #blog .container .list .card .col-md-4 {
+  padding: 0 0;
+}
+
+body #blog .container .list .card .col-md-8 {
+  padding: 0 15px 0 0;
+}
+
+body #blog .container .list .card .col-md-8 .card-body .card-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+body #blog .container .list .card .col-md-8 .card-body .card-text {
+  font-size: 0.8rem;
+  font-family: 'Open Sans';
+  overflow: hidden;
+}
+
+body #blog .container .list .link {
+  margin: 0 1.2rem;
+  text-align: right;
+}
+
+body #reviews {
+  background: #ffffff;
+  padding: 6rem 0;
+}
+
+body #reviews .container h3 {
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+body #reviews .container .card-deck .card {
+  border-radius: 0;
+  padding: 1rem;
+  position: relative;
+}
+
+body #reviews .container .card-deck .card .card-title {
+  color: var(--primered);
+}
+
+body #reviews .container .card-deck .card .col-md-3 img {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 50%;
+}
+
+body .footer {
+  background: #000000;
+  padding: 4rem 2rem;
+  color: #cbcbcb;
+}
+
+body .footer .col-md-2 {
+  padding: 0 4rem;
+  font-size: 0.8rem;
+}
+
+body .footer .col-md-2 .logo {
+  max-width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+body .footer .col-md-2 ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+body .footer .col-md-2 h6 {
+  margin-bottom: 1rem;
+}
+
+body .footer .col-md-2 .fa {
+  margin: 0 1rem;
+}
+
+body .footer .col-md-4 {
+  padding: 0 0 0 6rem;
+}
+
+body .footer .col-md-4 h6 {
+  margin-bottom: 1rem;
+}
+
+body .footer .col-md-4 .fa {
+  margin: 0 1rem;
+}
+
+body .footer .col-md-4 .form input.form-control {
+  width: 60%;
+  height: 35px;
+  margin: 0 10px 0 0;
+  display: inline;
+}
+
+body .footer .col-md-4 .form button.btn {
+  background: var(--primeyellow);
 }
 /*# sourceMappingURL=style.css.map */

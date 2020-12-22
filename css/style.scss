@@ -438,10 +438,10 @@ h3 {
 
     // Parallax BG
     .parallax {
-        background: url('../images/parallax.jpg') no-repeat top/cover;
+        background: url('../images/parallax.jpg') no-repeat center/cover;
         background-attachment: fixed;
         width: 100vw;
-        min-height:70vh;
+        min-height:60vh;
     }
 
     // Hotel
@@ -525,10 +525,149 @@ h3 {
     }
 // Parallax BG
 .parallax2 {
-    background: url('../images/parallax2.jpg') no-repeat bottom/cover;
+    background: url('../images/parallax2.jpg') no-repeat center/cover;
     background-attachment: fixed;
     width: 100vw;
-    min-height:70vh;
+    min-height:60vh;
 }
 
+#blog {
+    padding: 4rem 0;
+    .container {
+        .content {
+            display: flex;
+            justify-content: space-between;
+            .card {
+                border-radius: 0!important;
+                margin: 0 1.2rem 0 0;
+                max-width: 800px;
+                .card-img-top {
+                    border-radius: 0;
+                }
+                .card-body {
+                    .card-title {
+                        font-size: 1.5rem;
+                        color: var(--primered);
+                        margin: 0;
+                    }
+                    small.text-muted {
+                        line-height: 3;
+                    }
+                }
+            }
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+            .card {
+                width: 400px;
+                height: 150px;
+                overflow: hidden;
+                .col-md-4 {
+                    padding: 0 0;
+                }
+                .col-md-8 {
+                    padding: 0 15px 0 0;
+                    .card-body {
+                        .card-title{
+                            font-size: 1.1rem;
+                            margin: 0 0 0.5rem 0;
+                        }
+                        .card-text {
+                            font-size: 0.8rem;
+                            font-family: 'Open Sans';
+                            overflow: hidden;
+                        }
+                    }
+                }
+                
+            }
+            .link {
+                margin: 0 1.2rem;
+                text-align: right;
+            }
+        }
+    }
+}
+
+#reviews {
+    background: #ffffff;
+    padding: 6rem 0;
+    .container {
+        h3 {
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+        .card-deck {
+            .card {
+                border-radius: 0;
+                .card-title{
+                    color: var(--primered);
+                }
+                padding: 1rem;
+                position: relative;
+                .col-md-3 {
+                    img {
+                        position: absolute;
+                        top: 50%;
+                        left: 60%;
+                        transform: translate(-50%,-50%);
+                        max-width: 120px;
+                        max-height: 120px;
+                        border-radius: 50%;
+                        // border: 1px solid #000000;
+                    }
+                    
+                }
+                .col-md-9 {
+
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background: #000000;
+    padding: 4rem 2rem;
+    color: #cbcbcb;
+    .col-md-2 {
+        padding: 0 4rem;
+        .logo {
+            max-width: 200px;
+            margin-bottom: 0.5rem;
+        }
+        font-size: 0.8rem;
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+        h6 {
+            margin-bottom: 1rem;
+        }
+        .fa {
+            margin: 0 1rem;
+        }    
+    }
+    .col-md-4 {
+        padding: 0 0 0 6rem;
+        h6 {
+            margin-bottom: 1rem;
+        }
+        .fa {
+            margin: 0 1rem;
+        }
+        .form {
+            input.form-control {
+                width: 60%;
+                height: 35px;
+                margin: 0 10px 0 0;
+                display: inline;
+            }
+            button.btn {
+                background: var(--primeyellow);
+            }
+        }
+    }
+}
 }
