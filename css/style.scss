@@ -52,6 +52,9 @@ h3 {
                         justify-content: space-between;
                         max-width: 71.25rem;
                         margin: 0 auto;
+                        .fa {
+                            font-size: 0.8rem;
+                        }
                     }
                 }
                 .header_nav {
@@ -68,8 +71,8 @@ h3 {
                             }
                         }
                         nav {
+                            flex: 8;
                             margin: 0 0 0 1rem;
-                            flex: 2;
                             a {
                                 color: var(--lightgrey);
                                 padding: 0 1rem;
@@ -79,13 +82,56 @@ h3 {
                             }
                         }
                         .signup {
+                            flex: 2;
                             i.fa.fa-user {
                                 border-right: 1px solid var(--lightgrey);
                                 padding: 0 0.5rem;
                             }
-                            i.fa.fa-search {
-                                padding: 0 0 0 0.5rem;
+                            .signup_disabled {
+                                width: 0;
+                                display: none;
                             }
+                            .search_box {
+                                position: relative;
+                                input.form-control {
+                                    background-color: rgba(0,0,0,0);
+                                    border: 0;
+                                    border-bottom: 1px solid rgba(#ffffff,1);
+                                    border-radius: 0;
+                                    height: 30px;
+                                    width: 0px;
+                                    padding:0;
+                                    color: var(--lightgrey);
+                                    display: inline;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                                input.form-control.searchopen {
+                                    width: 300px;
+                                    transition: all 0.2s ease-in-out;
+                                    padding: 0 1.7rem;
+                                }
+                                button {
+                                    border: 0!important;
+                                    background: rgba(0,0,0,0)!important;
+                                    color: var(--lightgrey);
+                                    outline: 0;
+                                    display: inline-block;
+                                }
+                                button.searchbtn {
+                                    position: absolute;
+                                    top: 0.5px;
+                                    line-height: 0;
+                                }
+                                button.crossbtn {
+                                    display: none;
+                                    position: absolute;
+                                    right: 2px;
+                                    top: 0.5px;
+                                    line-height: 0;
+
+                                }
+                            }
+                            
                         }
                     }
                 }
@@ -126,15 +172,27 @@ h3 {
                         .form-control {
                             background: rgba(#000000,0);
                             border: 0;
+                            // border-bottom: 1px solid rgba(#7e7e7e, 0.5);
                             border-radius: 0;
                             border-right: 1px solid rgba(#7e7e7e, 0.5);
                             text-align: center;
                             width: 18.75rem;
+                            outline: 0;
+                            box-shadow: 0;
+                        }
+                        .form-control:focus {
+                            background: rgba(#181818,0.5);
+                            outline: 0 ;
+                            border: 0;
+                            box-shadow: 0;
                         }
                         button.btn {
                             color: rgba(#7e7e7e, 0.5);
                             // border: 1px solid #fff;
                             margin: 0 1rem 0 0;
+                        }
+                        button.btn:hover {
+                            color: #ffffff;
                         }
                     }
                 }
@@ -618,9 +676,6 @@ h3 {
                         // border: 1px solid #000000;
                     }
                     
-                }
-                .col-md-9 {
-
                 }
             }
         }

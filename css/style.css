@@ -74,6 +74,10 @@ body #landing header .header_top .content {
   margin: 0 auto;
 }
 
+body #landing header .header_top .content .fa {
+  font-size: 0.8rem;
+}
+
 body #landing header .header_nav {
   padding: 0.3rem 0;
   font-size: 0.8rem;
@@ -93,10 +97,10 @@ body #landing header .header_nav .content .logo img {
 }
 
 body #landing header .header_nav .content nav {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
   margin: 0 0 0 1rem;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
 }
 
 body #landing header .header_nav .content nav a {
@@ -108,13 +112,67 @@ body #landing header .header_nav .content nav a:hover {
   color: var(--midgrey);
 }
 
+body #landing header .header_nav .content .signup {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 body #landing header .header_nav .content .signup i.fa.fa-user {
   border-right: 1px solid var(--lightgrey);
   padding: 0 0.5rem;
 }
 
-body #landing header .header_nav .content .signup i.fa.fa-search {
-  padding: 0 0 0 0.5rem;
+body #landing header .header_nav .content .signup .signup_disabled {
+  width: 0;
+  display: none;
+}
+
+body #landing header .header_nav .content .signup .search_box {
+  position: relative;
+}
+
+body #landing header .header_nav .content .signup .search_box input.form-control {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 1px solid white;
+  border-radius: 0;
+  height: 30px;
+  width: 0px;
+  padding: 0;
+  color: var(--lightgrey);
+  display: inline;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+body #landing header .header_nav .content .signup .search_box input.form-control.searchopen {
+  width: 300px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 0 1.7rem;
+}
+
+body #landing header .header_nav .content .signup .search_box button {
+  border: 0 !important;
+  background: rgba(0, 0, 0, 0) !important;
+  color: var(--lightgrey);
+  outline: 0;
+  display: inline-block;
+}
+
+body #landing header .header_nav .content .signup .search_box button.searchbtn {
+  position: absolute;
+  top: 0.5px;
+  line-height: 0;
+}
+
+body #landing header .header_nav .content .signup .search_box button.crossbtn {
+  display: none;
+  position: absolute;
+  right: 2px;
+  top: 0.5px;
+  line-height: 0;
 }
 
 body #landing .showcase {
@@ -173,11 +231,26 @@ body #landing .showcase .searchtour form .form-group .form-control {
   border-right: 1px solid rgba(126, 126, 126, 0.5);
   text-align: center;
   width: 18.75rem;
+  outline: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+body #landing .showcase .searchtour form .form-group .form-control:focus {
+  background: rgba(24, 24, 24, 0.5);
+  outline: 0;
+  border: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
 }
 
 body #landing .showcase .searchtour form .form-group button.btn {
   color: rgba(126, 126, 126, 0.5);
   margin: 0 1rem 0 0;
+}
+
+body #landing .showcase .searchtour form .form-group button.btn:hover {
+  color: #ffffff;
 }
 
 body #hidden_header {
