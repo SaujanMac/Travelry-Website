@@ -167,12 +167,20 @@ body #landing header .header_nav .content .signup .search_box button.searchbtn {
   line-height: 0;
 }
 
+body #landing header .header_nav .content .signup .search_box button.searchbtn:hover {
+  color: #ffffff;
+}
+
 body #landing header .header_nav .content .signup .search_box button.crossbtn {
   display: none;
   position: absolute;
   right: 2px;
   top: 0.5px;
   line-height: 0;
+}
+
+body #landing header .header_nav .content .signup .search_box button.crossbtn:hover {
+  color: #ffffff;
 }
 
 body #landing .showcase {
@@ -289,9 +297,9 @@ body #hidden_header .header_nav .content .logo img {
 
 body #hidden_header .header_nav .content nav {
   margin: 0 0 0 1rem;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
 }
 
 body #hidden_header .header_nav .content nav a {
@@ -303,6 +311,12 @@ body #hidden_header .header_nav .content nav a:hover {
   color: #000000;
 }
 
+body #hidden_header .header_nav .content .signup {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 body #hidden_header .header_nav .content .signup i.fa.fa-user {
   border-right: 1px solid var(--darkgrey);
   padding: 0 0.5rem;
@@ -310,6 +324,63 @@ body #hidden_header .header_nav .content .signup i.fa.fa-user {
 
 body #hidden_header .header_nav .content .signup i.fa.fa-search {
   padding: 0 0 0 0.5rem;
+}
+
+body #hidden_header .header_nav .content .signup .signup_disabled {
+  width: 0;
+  display: none;
+}
+
+body #hidden_header .header_nav .content .signup .search_box {
+  position: relative;
+}
+
+body #hidden_header .header_nav .content .signup .search_box input.form-control {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-bottom: 1px solid #222222;
+  border-radius: 0;
+  height: 30px;
+  width: 0px;
+  padding: 0;
+  color: #181818;
+  display: inline;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+body #hidden_header .header_nav .content .signup .search_box input.form-control.searchopen {
+  width: 300px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 0 2.2rem;
+}
+
+body #hidden_header .header_nav .content .signup .search_box button {
+  border: 0 !important;
+  background: rgba(0, 0, 0, 0) !important;
+  color: #181818;
+  outline: 0;
+  display: inline-block;
+}
+
+body #hidden_header .header_nav .content .signup .search_box button.searchbtn_black {
+  position: absolute;
+  top: 0.5px;
+  line-height: 0;
+}
+
+body #hidden_header .header_nav .content .signup .search_box button.searchbtn_black:hover {
+  color: var(--primered);
+}
+
+body #hidden_header .header_nav .content .signup .search_box button.crossbtn_black {
+  display: none;
+  position: absolute;
+  right: 2px;
+  top: 0.5px;
+  line-height: 0;
+  color: var(--primered);
 }
 
 body #about {
