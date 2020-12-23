@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/8a869dfe3c.js" crossorigin="anonymous"></script>
     <!-- Local CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
     <!-- OwlCarousel -->
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css" type="text/css">
@@ -38,13 +39,38 @@
           </div>
           <div class="header_nav">
             <div class="content d-flex align-items-center justify-content-around">
-            <div class="logo"><img src="images/logo.png" alt="Traversy"></div>
-            <nav>
-              <a href="#">Packages</a>
+            <!-- NAVBAR -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="logo"><img src="images/logo.png" alt="Traversy"></div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-bars"></i></span><span class="pl-2">Menu</span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Locations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hotels</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Flights</a>
+                      <a class="dropdown-item" href="#">About us</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+              <!-- <a href="#">Packages</a>
               <a href="#">Locations</a>
               <a href="#">Hotels</a>
-              <a href="#">More...</a>
-            </nav>
+              <a href="#">More...</a> -->
             <div class="signup">
               <span class="signup_icon">SIGN UP / LOGIN <i class="fa fa-user"></i></span><span class="search_box"><input type="text" class="form-control searchform"><button class="crossbtn"><i class="fa fa-close"></i></button><button class="searchbtn"><i class="fa fa-search"></i></button></span>
             </div>
@@ -60,15 +86,13 @@
             <div class="form-group">
               <input type="text" class="form-control" placeholder="Choose Destination">
               <input type="text" class="form-control" placeholder="Time Duration">
-              <input type="text" class="form-control border-0" placeholder="No. of Guests">
+              <input type="text" class="form-control mobileborder border-0" placeholder="No. of Guests">
               <button class="btn">Search Tour</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-
-
     <!-- About -->
     <div id="about">
 <div class="container">
@@ -111,7 +135,7 @@
 
         <h3>Popular Destinations</h3>
         <!-- card-row -->
-        <div class="card-deck row1">
+        <div class="card-deck row1 owl-carousel owl-theme pop-carousel">
           <!-- card -->
           <div class="card">
             <a href="#"><img class="card-img-top" src="images/basantapur.png" alt="Card image cap"><h5>Basantapur</h5></a>
@@ -130,7 +154,7 @@
         </div>
         </div>
         <!-- card-row -->
-        <div class="card-deck row2">
+        <div class="card-deck row2 owl-carousel owl-theme pop-carousel">
           <!-- card -->
           <div class="card">
             <a href="#"><img class="card-img-top" src="images/bandipur.png" alt="Card image cap"><h5>Bandipur</h5></a>
@@ -156,7 +180,7 @@
     <div class="container">
       <h3>Choose Your Form of Travel</h3>
       <h6 class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla tenetur eveniet alias.</h6>
-      <div class="card-deck">
+      <div class="card-deck owl-carousel owl-theme travel-carousel">
         <div class="card">
           <a href="#"><img class="card-img-top" src="images/trek.jpg" alt="Card image cap"></a>
           <div class="card-body">
@@ -623,64 +647,7 @@
         </script>
         <script src="js/owl.carousel.min.js"></script>
         <!-- carouselowl -->
-        <script>
-          $('.tour-carousel').owlCarousel({
-            loop:true,
-            // margin:10,
-            nav:true,
-            dots: false,
-            autoplay: true,
-            responsive:{
-                  0:{
-                      items:1
-                  },
-                  600:{
-                      items:4
-                  },
-                  1000:{
-                      items:4
-                  }
-    }
-})
-
-$('.rest-carousel').owlCarousel({
-            loop:true,
-            // margin:10,
-            nav:true,
-            dots: false,
-            autoplay: true,
-            responsive:{
-                  0:{
-                      items:1
-                  },
-                  600:{
-                      items:4
-                  },
-                  1000:{
-                      items:4
-                  }
-    }
-})
-
-          $('.reviewcard').owlCarousel({
-                    loop:true,
-                    // margin:10,
-                    // nav:true,
-                    dots: false,
-                    autoplay: true,
-                    responsive:{
-                          0:{
-                              items:1
-                          },
-                          600:{
-                              items:2
-                          },
-                          1000:{
-                              items:2
-                          }
-            }
-        })  
-        </script>
+        <script src="js/mediacarousel.js"></script>
         <!-- <script>
           $(document).ready(function(){
             $(window).scroll(function() {

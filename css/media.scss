@@ -1,0 +1,572 @@
+@media only screen and (max-width: 480px) {
+    body {
+       // Landing Page
+       overflow-x: hidden;
+       max-width: 480px;
+       .container {
+           max-width: 480px;
+           padding: 0 1rem;
+       }
+    #landing {
+        background: url('../images/landing1920.jpg') no-repeat top/cover;
+        max-width: 360px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        letter-spacing: 0.12rem;
+        text-align: left;
+        color: var(--lightgrey);
+
+        // header
+        header {
+            background-color: rgba(#000000,0.2);
+            transition: all 0.2s ease-in-out;
+            z-index: 999;
+                .header_top {
+                    display: none;
+                    padding: 0.6rem 0;
+                    font-size: 0.65rem;
+                    border-bottom: 0.5px solid rgba(#cbcbcb,0.2);
+                    .content {
+                        display: flex;
+                        align-content: center;
+                        justify-content: space-between;
+                        max-width: 71.25rem;
+                        margin: 0 auto;
+                        .fa {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+                .header_nav {
+                    padding: 0.3rem 0;
+                    font-size: 0.8rem;
+                    .content {
+                        max-width: 360px;
+                        margin: 0 auto;
+                        nav.navbar {
+                            padding: 1rem;
+                            button.navbar-toggler {
+                                color: var(--lightgrey);
+                                .navbar-toggler-icon {
+                                    color: var(--lightgrey);
+                                }
+                            }
+                            .logo {
+                                max-width: 80px;
+                                // margin: 0 1rem 0 0;
+                                img {
+                                    width: 80px;
+                                }
+                            }
+                            a {
+                                color: var(--lightgrey);
+                                padding: 0 1rem;
+                            }
+                            a:hover {
+                                color: var(--midgrey);
+                            }
+                            .navbar-nav {
+                                li {
+                                    padding: 0.4rem 0;
+                                    a.nav-link {
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                        .signup {
+                            display: none;
+                            i.fa.fa-user {
+                                border-right: 1px solid var(--lightgrey);
+                                padding: 0 0.5rem;
+                            }
+                            .signup_disabled {
+                                width: 0;
+                                display: none;
+                            }
+                            .search_box {
+                                position: relative;
+                                input.form-control {
+                                    background-color: rgba(0,0,0,0);
+                                    border: 0;
+                                    border-bottom: 1px solid rgba(#ffffff,1);
+                                    border-radius: 0;
+                                    height: 30px;
+                                    width: 0px;
+                                    padding:0;
+                                    color: var(--lightgrey);
+                                    display: inline;
+                                    transition: all 0.2s ease-in-out;
+                                }
+                                input.form-control.searchopen {
+                                    width: 300px;
+                                    transition: all 0.2s ease-in-out;
+                                    padding: 0 1.7rem;
+                                }
+                                button {
+                                    border: 0!important;
+                                    background: rgba(0,0,0,0)!important;
+                                    color: var(--lightgrey);
+                                    outline: 0;
+                                    display: inline-block;
+                                }
+                                button.searchbtn {
+                                    position: absolute;
+                                    top: 0.5px;
+                                    line-height: 0;
+                                }
+                                button.searchbtn:hover {
+                                    color: #ffffff;
+                                }
+                                button.crossbtn {
+                                    display: none;
+                                    position: absolute;
+                                    right: 2px;
+                                    top: 0.5px;
+                                    line-height: 0;
+
+                                }
+                                button.crossbtn:hover {
+                                    color: #ffffff;
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+           
+        }
+
+        
+        // Showcase
+        .showcase {
+            text-align: center;
+            h1 {
+                margin: 4rem 0 0 0;padding:1rem 0 0 0;
+                font-size: 5rem;
+                font-weight: 600;
+                letter-spacing: 11px;
+                line-height: 1;
+                transition: all 0.5s ease-in-out;
+            }
+            h6 {
+                margin:0;padding:0.5rem 0 0 0;
+                letter-spacing: 0.3125rem;
+                font-size: 1rem;
+                transition: all 0.5s ease-in-out;
+            }
+
+            // searchtour
+            .searchtour {
+                background: rgba(#000000,0.5);
+                max-width: 400px;
+                border-radius: 0px;
+                color: var(--lightgrey);
+                margin: 15rem auto 0 auto;
+                form {
+                    padding: 1rem;
+                    .form-group{
+                        padding: 0; margin: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+                        .form-control {
+                            background: rgba(#333333,0.5);
+                            // border-bottom: 1px solid rgba(#7e7e7e, 0.5);
+                            border-radius: 0;
+                            text-align: center;
+                            width: 18.75rem;
+                            outline: 0;
+                            box-shadow: 0;
+                            margin: 0.3rem 0;
+                            border: 0;
+                        }
+                        .form-control:focus {
+                            background: rgba(#181818,0.5);
+                            outline: 0 ;
+                            border: 0;
+                            box-shadow: 0;
+                        }
+                        button.btn {
+                            background-color: var(--darkgrey);
+                            color: rgba(#7e7e7e, 0.5);
+                            width: 100%;
+                            // border: 1px solid #fff;
+                            margin: 1rem 0;
+                        }
+                        button.btn:hover {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    #hidden_header {
+        display: none;
+    }
+    #about {
+        padding: 4rem 0;
+        color: var(--darkgrey);
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+            line-height: 2;
+            text-align: center;
+            .content {
+                padding: 1.5rem 1.5rem;
+                h1 {
+                    color: #ada9a9;
+                    font-family: 'Montserrat' sans-serif;
+                    font-weight: 300;
+                    line-height: 1;
+                    text-align: center;
+                }
+                p.subtext {
+                    font-family: 'Montserrat';
+                    color: #8b8b8b;
+                    padding: 1rem 0;
+                }
+                p {
+                    font-family: 'Open Sans';
+                }
+                button.btn {
+                    font-family: 'Open Sans';
+                    background-color: var(--primered);
+                    border-radius: 0;
+                    color: #fff;
+                    transition: all 0.2s ease-in-out;
+                }
+                button.btn:hover {
+                    color: var(--primeyellow);
+                }
+            }
+            .image {
+                max-width: 480px;
+                overflow: hidden;
+                img {
+                    width: 360px;
+                }
+            }
+        }
+            
+        
+    }
+
+ // populardestination
+ #popdest {
+    padding: 4rem 0 8rem 0;
+    .container {
+        h3 {
+            color: var(--primered);
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            line-height: 4;
+            text-align: center;
+        }
+        .card-deck{
+            .card {
+                height: 240px;
+                border-radius: 0;
+                overflow: hidden;
+                a {
+                    display: inline-block;
+                    position: relative;
+                    height: 240px;
+                    .card-img-top {
+                        border-radius: 0;
+                        transform: scale(1);
+                        opacity: 1;
+                        transition: all 0.2s ease-in-out;
+                    }
+                    h5 {
+                        color: rgba(#ffffff, 1);
+                        display: inline-block;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        transition: all 0.2s ease-in-out;
+                    }
+                }
+                
+
+            }
+            a:hover {
+                .card-img-top {
+                    opacity: 1;
+                    transform: scale(1);
+                    transition: all 0.2s ease-in-out;
+                }
+                h5 {
+                    color: rgba(#ffffff, 1);
+                    transition: all 0.2s ease-in-out;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    .row2 {
+        margin-top: 1.875rem;
+        display: none;
+    }
+}
+
+
+    // travelform
+    #travelform {
+        background: #ffffff no-repeat center/cover;
+        // background-attachment: fixed;
+        padding: 3rem 0;
+        .container {
+            h3 {
+                line-height: 2;
+        text-align: center;
+            }
+            .text-muted {
+                color: #8b8b8b!important;
+                font-weight: 300;
+                line-height: 2;
+                text-align: center;
+            }
+            .card-deck {
+                a {
+                    color: var(--primered);
+                }
+                .card {
+                    border-radius: 0;
+                    background-color: rgba(0,0,0,0);
+                    transition: all 0.5s ease-in-out;
+                    border-top: 2px solid rgba(0,0,0,0);
+                    height: 400px;
+                    .card-img-top {
+                        border-radius: 0;
+                    }
+                    .card-body {
+                        background-color: #ffffff;
+                        .card-title {
+                            color: var(--primered);
+                        }
+                        .card-text {
+                            font-size: 0.8rem;
+                            color: var(--midgrey);
+                        }
+                    }
+                    .card-footer {
+                        background: rgba(#ffffff, 1);
+                        font-size: 0.8rem;
+                        font-family: 'Open Sans';
+
+                    }
+                }
+                .card:hover {
+                    // box-shadow: 0px -2px 1px var(--primered);
+                    border-top: 2px solid var(--primered);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    #featured {
+        position: relative;
+        padding: 4rem 0;
+        h3 {
+            line-height: 2;
+            text-align: center;
+        }
+        .text-muted {
+            line-height: 2;
+            text-align: center;
+        }
+        .card {
+            margin: 0 0.5rem;
+            border-radius: 0;
+            border-top: 0px solid rgba(0,0,0,0);
+            transition: all 0.2s ease-in-out;
+            .card-img-top{
+                border-radius: 0;
+            }
+            .label{
+                background-color: #222222;
+                padding: 0.7rem 0.8rem;
+                margin: 0;
+                font-family: 'Open Sans';
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .text-muted {
+                    line-height: 0;
+                    color: #ffffff!important;
+                    font-weight: 400!important;
+                    font-size: 0.5rem;
+                    .fas,.far,.fa {
+                        font-size: 0.5rem;
+                        padding: 0 0.1rem 0 0;
+                    }
+                }
+            }
+            .card-body {
+                padding: 1rem;
+                .card-title {
+                    font-size: 0.9rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    line-height: normal;
+                    .title {
+                        color: var(--primered);
+                    }
+                }
+
+                .text-muted {
+                    color: var(--lightgrey)!important;
+                    line-height: 2;
+                    font-size: 0.7rem;
+                    .fa {
+                        padding: 0 0.2rem 0 0;
+                    }
+                }
+
+                .card-text {
+                    font-family: 'Open Sans';
+                    font-size: 0.9rem;
+                    line-height: 1.8;
+                    padding: 0.8rem 0;
+                    color: var(--midgrey);
+                    margin: 0 0 0.5rem 0;
+                }
+             
+                .btn {
+                    font-family: "Open Sans";
+                    background-color: var(--primered);
+                    border-radius: 0;
+                    color: #ffffff;
+                    font-size: 0.8rem;
+                    margin: 1.5rem 0 0 0;
+                }
+                .btn:hover {
+                    background-color: var(--primeyellow);
+                    color: #000000;
+                }
+            }
+        }
+        .card:hover {
+            border-top: 2px solid var(--primered);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+    }
+
+    // Parallax BG
+    .parallax, .parallax2 {
+        display: none;
+    }
+
+    #hotels {
+        .container {
+            flex-direction: column;
+            h3 {
+                text-align: center;
+            }
+            h1 {
+                text-align:  center;
+            }
+            .text-muted, .subtext {
+                text-align: center;
+            }
+            p {
+                text-align: center;
+            }
+            .images {
+                .img_thmb {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #restaurants {
+        h3 {
+            text-align: center;
+            line-height: 1.5;
+        }
+        .text-muted {
+            text-align: center;
+            line-height: 1.5;
+        }
+    }
+
+    #blog {
+        display: none;
+    }
+
+    #reviews {
+        h3 {
+            text-align: center;
+        }
+        .card {
+            .col-md-3 {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .footer {
+        background: #000000;
+        padding: 4rem 2rem;
+        color: #cbcbcb;
+        .col-md-2 {
+            padding: 0 4rem;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            .logo {
+                max-width: 250px;
+                margin: 0 auto;
+            }
+            font-size: 0.8rem;
+            ul {
+                display: none;
+                list-style-type: none;
+                text-align: center;
+            }
+            h6 {
+                margin-bottom: 1rem;
+            }
+            .fa {
+                margin: 0 1rem;
+            }    
+        }
+        .col-md-4 {
+            display: none;
+            padding: 0 0 0 6rem;
+            h6 {
+                margin-bottom: 1rem;
+            }
+            .fa {
+                margin: 0 1rem;
+            }
+            .form {
+                input.form-control {
+                    width: 60%;
+                    height: 35px;
+                    margin: 0 10px 0 0;
+                    display: inline;
+                }
+                button.btn {
+                    background: var(--primeyellow);
+                }
+            }
+        }
+    }
+  }
+}

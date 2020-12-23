@@ -88,19 +88,34 @@ body #landing header .header_nav .content {
   margin: 0 auto;
 }
 
-body #landing header .header_nav .content .logo {
+body #landing header .header_nav .content nav {
+  padding-left: 0;
+  -webkit-box-flex: 9;
+      -ms-flex: 9;
+          flex: 9;
+  margin: 0 0 0 0rem;
+}
+
+body #landing header .header_nav .content nav .logo {
   max-width: 9.375rem;
 }
 
-body #landing header .header_nav .content .logo img {
+body #landing header .header_nav .content nav .logo img {
   width: 9.375rem;
 }
 
-body #landing header .header_nav .content nav {
-  -webkit-box-flex: 8;
-      -ms-flex: 8;
-          flex: 8;
-  margin: 0 0 0 1rem;
+body #landing header .header_nav .content nav .navbar-nav .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  font-size: inherit;
+}
+
+body #landing header .header_nav .content nav .navbar-nav .dropdown-menu a.dropdown-item {
+  padding: 0.3rem 1rem;
+}
+
+body #landing header .header_nav .content nav .navbar-nav .dropdown-menu a.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 body #landing header .header_nav .content nav a {

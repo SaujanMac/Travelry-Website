@@ -63,16 +63,32 @@ h3 {
                     .content {
                         max-width: 71.25rem;
                         margin: 0 auto;
-                        .logo {
-                            max-width: 9.375rem;
-                            // margin: 0 1rem 0 0;
-                            img {
-                                width: 9.375rem;
-                            }
-                        }
+                        
                         nav {
-                            flex: 8;
-                            margin: 0 0 0 1rem;
+                            padding-left: 0;
+                            flex: 9;
+                            margin: 0 0 0 0rem;
+                            .logo {
+                                max-width: 9.375rem;
+                                // margin: 0 1rem 0 0;
+                                img {
+                                    width: 9.375rem;
+                                }
+                            }
+                            .navbar-nav {
+                                .dropdown-menu {
+                                    background-color: rgba(#000000,0.2);
+                                    border-radius: 0;
+                                    font-size: inherit;
+                                    a.dropdown-item {
+                                        padding: 0.3rem 1rem;
+                                    }
+                                    a.dropdown-item:hover {
+                                        background-color: rgba(#000000,0.4);
+                                    }
+                                }
+
+                            }
                             a {
                                 color: var(--lightgrey);
                                 padding: 0 1rem;
